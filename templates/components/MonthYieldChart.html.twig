@@ -1,10 +1,10 @@
 <div {{ attributes }}>
-    <div style="min-height: 480px; margin-bottom: 1.5rem;">
+    <div style="margin-bottom: 1.5rem;">
         {{ render_chart(chart) }}
     </div>
     <hr>
     <div class="row justify-content-center">
-        <div class="col-2">
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <select id="year" class="form-select" data-model="year">
                 {% for value, label in years %}
                     <option {% if value == year%}selected{% endif%} value="{{ value }}">{{ label }}</option>
@@ -12,7 +12,7 @@
             </select>
         </div>
 
-        <div class="col-2">
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <select id="month" class="form-select" data-model="month">
                 {% for value, label in months %}
                     <option {% if value == month%}selected{% endif%} value="{{ value }}">{{ label }}</option>
