@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Chart.js!{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <div class="chart-container">
+                {{ render_chart(chart) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
